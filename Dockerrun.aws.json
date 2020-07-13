@@ -1,0 +1,32 @@
+
+{
+    "AWSEBDockerrunVersion": 2,
+    "volumes": [
+      {
+       	"name": "sample-app-rails",
+        "host": {
+          "sourcePath": "/var/app/current/sample_app_rails_4"
+        }
+      }
+    ],
+    "containerDefinitions": [
+      {
+       	"name": "sample-app-rails",
+        "image": "johnzhang08265/sample-app-rails",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 3000
+          }
+	    ],
+	    "mountPoints": [
+          {
+            "sourceVolume": "sample-app-rails",
+            "containerPath": "/myapp"
+          }
+	    ]
+      }
+    ]
+}
