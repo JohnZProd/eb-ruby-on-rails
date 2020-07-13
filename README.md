@@ -2,15 +2,12 @@
 
 https://hub.docker.com/repository/docker/johnzhang08265/sample-app-rails
 
+```
 git clone https://github.com/railstutorial/sample_app_rails_4
 cd sample_app_rails_4/
+```
 
 Using ruby:2.0.0
-
-```
-docker pull ruby:2.0.0
-```
-
 
 ```Dockerfile
 FROM ruby:2.0.0
