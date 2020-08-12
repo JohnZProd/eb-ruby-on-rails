@@ -64,13 +64,11 @@ cd <path to>/eb-ruby-on-rails
 
 ```json
 {
-    ///
     "containerDefinitions": [
       {
        	"name": "sample-app-rails",
         "image": "<image repository>/<image name>",
-        "essential": true,
-        //
+        "essential": true
       }
     ]
 }
