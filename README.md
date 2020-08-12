@@ -50,6 +50,8 @@ At this stage, push the image into your image respository
 
 ## Test Locally
 
+In production, docker parameters will be outlined in the Dockerrun.aws.json file. The equivalent docker command to test the container locally on your machine is the following (Assuming that the sample app is found on /home/ec2-user/sample_app_rails_4 on your local machine)
+
 ```
 $ docker run -d --mount type=bind,source="/home/ec2-user/sample_app_rails_4",target=/myapp -p 80:3000 <image id>
 ```
